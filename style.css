@@ -156,3 +156,14 @@ footer {
     color: white;
     font-size: 1rem;
 }
+
+/* Publications list adjustments */
+ul.publications {
+    padding-left: 20px;
+    font-size: 1rem; /* Slightly smaller font for publications */
+}
+
+ul.publications li {
+    margin-bottom: 15px; /* Adds more space between publication items */
+    line-height: 1.6; /* Adjust line height for readability */
+}
