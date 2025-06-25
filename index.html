@@ -200,22 +200,29 @@
           </div>
           
           <!-- Projects -->
-            <div class="mb-5">
-            <h2 class="mb-3">Selected Projects</h2>
-            <div class="p-3 mb-3 border rounded" style="background-color: #f4faff;">
-                <h5 class="mb-2">🔬 <strong>Multimodal Vascular Profiling</strong></h5>
-                <p class="mb-1">
-                Designed and implemented end-to-end data pipelines that combined in-vivo vascular imaging (two-photon microscopy) with post-mortem tissue analysis to identify regional microvascular failure after stroke. Integrated vessel diameter, flow dynamics, and immunohistochemical markers to quantify treatment efficacy. Leveraged Python (Pandas, NumPy, Matplotlib) and ImageJ for image preprocessing, segmentation, and quantification.
-                </p>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="projectsHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectsCollapse" aria-expanded="false" aria-controls="projectsCollapse">
+                Selected Projects
+                </button>
+            </h2>
+            <div id="projectsCollapse" class="accordion-collapse collapse" aria-labelledby="projectsHeading">
+                <div class="accordion-body">
+                <div class="p-3 mb-3 border rounded" style="background-color: #f4faff;">
+                    <h5 class="mb-2">🔬 <strong>Multimodal Vascular Profiling</strong></h5>
+                    <p class="mb-1">
+                    Designed and implemented end-to-end data pipelines that combined in-vivo vascular imaging (two-photon microscopy) with post-mortem tissue analysis to identify regional microvascular failure after stroke. Integrated vessel diameter, flow dynamics, and immunohistochemical markers to quantify treatment efficacy. Leveraged Python (Pandas, NumPy, Matplotlib) and ImageJ for image preprocessing, segmentation, and quantification.
+                    </p>
+                </div>
+                <div class="p-3 mb-3 border rounded" style="background-color: #f4faff;">
+                    <h5 class="mb-2">🧬 <strong>Transcriptomics Pipeline for Neuroinflammation</strong></h5>
+                    <p class="mb-1">
+                    Developed reproducible and modular RNASeq pipelines to analyze differentially expressed genes (DEGs) and biological pathways in stroke and neutrophil depletion models. Used edgeR for statistical testing, clusterProfiler for enrichment (GO/KEGG), and STRING/Cytoscape for functional network analysis. The pipeline revealed age- and treatment-specific immune responses and identified hub genes regulating vascular inflammation.
+                    </p>
+                </div>
+                </div>
             </div>
-            <div class="p-3 mb-3 border rounded" style="background-color: #f4faff;">
-                <h5 class="mb-2">🧬 <strong>Transcriptomics Pipeline for Neuroinflammation</strong></h5>
-                <p class="mb-1">
-                Developed reproducible and modular RNASeq pipelines to analyze differentially expressed genes (DEGs) and biological pathways in stroke and neutrophil depletion models. Used edgeR for statistical testing, clusterProfiler for enrichment (GO/KEGG), and STRING/Cytoscape for functional network analysis. The pipeline revealed age- and treatment-specific immune responses and identified hub genes regulating vascular inflammation.
-                </p>
             </div>
-            </div>
-
 
 
 
