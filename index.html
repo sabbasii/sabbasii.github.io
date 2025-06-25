@@ -15,76 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-        }
-        .masthead {
-            background: linear-gradient(135deg, #f3f4f6, #fff);
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        }
-        .masthead img {
-            height: 60px;
-            margin: 0 10px;
-        }
-        .sidebar img {
-            width: 100%;
-            max-width: 160px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        .sidebar .list-unstyled li {
-            margin: 0.5rem 0;
-        }
-        footer {
-            background: #f1f1f1;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 3rem;
-        }
-        .section-title {
-            border-left: 5px solid #007bff;
-            padding-left: 1rem;
-            background: #e9f5ff;
-            padding: 0.75rem 1rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 0.5rem;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
-        }
-        .collapsible-content {
-            display: none;
-            margin-top: 1rem;
-            padding: 1rem;
-            background: #fefefe;
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-        }
-        .dark-toggle {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 999;
-        }
-        .collapsible-content ul {
-            padding-left: 1rem;
-        }
-        .collapsible-content ul li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight {
-            background: #fef9e7;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
+        body{font-family:'Roboto',sans-serif; transition: background-color 0.3s, color 0.3s;}
+        h1,h2{font-family:'Playfair Display',serif;}
+        .masthead{background:#f8f9fa;padding:2rem 0;text-align:center;}
+        .masthead img{height:60px;margin:0 10px;}
+        .sidebar img{width:100%;max-width:160px;border-radius:10px;}
+        .sidebar .list-unstyled li{margin:0.3rem 0;}
+        footer{background:#f8f9fa;text-align:center;padding:1rem;margin-top:3rem;}
+        .section-title{border-bottom:2px solid #dee2e6;padding-bottom:.3rem;margin-top:2.5rem;margin-bottom:1rem; cursor:pointer;}
+        .collapsible-content{display:none; margin-top:1rem;}
+        .dark-toggle {position:fixed;top:10px;right:10px;z-index:999;}
     </style>
 </head>
 <body>
@@ -114,12 +54,57 @@
 
             <!-- Main Content -->
             <main class="col-md-9">
-                <div onclick="toggleCollapse(this)" class="section-title">Professional Summary</div>
+                <h2 class="section-title" onclick="toggleCollapse(this)">Professional Summary</h2>
                 <div class="collapsible-content">
-                    <p>Computational biologist and neuroscientist with expertise in analyzing high-dimensional biological data using Python, R, and machine learning. Applied machine learning algorithms to genomic, transcriptomic, and imaging datasets to extract biological insights. Skilled in building reproducible pipelines, integrating multi-omics data, and translating findings for interdisciplinary teams.</p>
+                    <p>Computational biologist and neuroscientist with expertise in analyzing genomic, transcriptomic, and imaging data using Python, R, and machine learning. Applied machine learning algorithms to extract insights from diverse datasets in preclinical stroke research. Skilled in building reproducible pipelines, integrating multi-omics data, and delivering actionable findings in collaborative settings.</p>
                 </div>
 
-                <div onclick="toggleCollapse(this)" class="section-title">Publications</div>
+                <h2 class="section-title" onclick="toggleCollapse(this)">Experience</h2>
+                <div class="collapsible-content">
+                    <h5><strong>Postdoctoral Fellow</strong> – University of Alberta, Edmonton, AB (Mar 2025 – Present)</h5>
+                    <ul>
+                        <li><strong>Clinical Research Lab</strong>: Analyzed genetic profiles of stroke patients to explore immune-based diagnostic markers and correlations with MRI lesion metrics.</li>
+                        <li><strong>Computational Lab</strong>: Applied machine learning to identify genomic signatures associated with white matter damage and cognitive decline; integrated transcriptomic, MRI, and clinical datasets using Python and R.</li>
+                    </ul>
+                    <h5><strong>PhD Researcher</strong> – University of Alberta (2019 – 2024)</h5>
+                    <ul>
+                        <li>Led a preclinical stroke imaging project combining vascular physiology, flow analysis, and transcriptomics to uncover microcirculatory failure mechanisms.</li>
+                        <li>Applied computational pipelines to quantify vascular flow, vessel structure, and cytokine signaling; used regression and clustering techniques for group comparisons.</li>
+                        <li>Optimized neutrophil depletion protocol that enhanced cerebral blood flow and revealed the role of neutrophils in vascular obstruction and neuroinflammation.</li>
+                        <li>Collaborated with <strong>NeuroTrauma Sciences, LLC</strong> to assess the therapeutic effects of Ibudilast in stroke models using vascular and transcriptomic endpoints.</li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title" onclick="toggleCollapse(this)">Selected Projects</h2>
+                <div class="collapsible-content">
+                    <ul>
+                        <li><strong>Immune-EV Biomarkers in Stroke:</strong> Analyzed immune cell–derived extracellular vesicles in stroke patients to evaluate biomarker–outcome associations using Python-based statistical analysis.</li>
+                        <li><strong>Multimodal Vascular Profiling:</strong> Designed data pipelines to merge in-vivo imaging with post-mortem tissue features to understand microvascular failure and treatment effects.</li>
+                        <li><strong>Transcriptomics Pipeline:</strong> Built reproducible RNASeq workflows for DEG, enrichment (GO/KEGG), and gene set clustering using edgeR, clusterProfiler, and STRING/Cytoscape.</li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title" onclick="toggleCollapse(this)">Education</h2>
+                <div class="collapsible-content">
+                    <ul>
+                        <li><strong>Ph.D. in Neuroscience</strong> – University of Alberta, Canada (2019–2024)</li>
+                        <li><strong>M.Sc. in Neurophysiology</strong> – University of Tehran, Iran (2014–2016)</li>
+                        <li><strong>B.Sc. in Animal Biology</strong> – University of Tehran, Iran (2010–2014)</li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title" onclick="toggleCollapse(this)">Technical Skills</h2>
+                <div class="collapsible-content">
+                    <ul>
+                        <li><strong>Programming:</strong> Python, R, Shell, SQL</li>
+                        <li><strong>Data Analysis:</strong> Machine learning (classification, regression, clustering), multivariate modeling, image processing, high-dimensional visualization</li>
+                        <li><strong>Tools:</strong> Pandas, NumPy, Matplotlib, Scikit-learn, Seaborn, TensorFlow, Keras, edgeR, clusterProfiler, Cytoscape, SPSS, STATA</li>
+                        <li><strong>Biological Analysis:</strong> Transcriptomics (RNASeq), Cytokine profiling (Luminex), Flow cytometry, High-res 2-photon imaging</li>
+                        <li><strong>Collaboration:</strong> Cross-functional teamwork with wet labs, statisticians, and biotech partners</li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title" onclick="toggleCollapse(this)">Publications</h2>
                 <div class="collapsible-content">
                     <ul>
                         <li>Abbasi S, Jickling G, Winship IR. Integrative multivariate analysis of imaging and transcriptomic data reveals mechanisms of vascular dysfunction after ischemic stroke. <em>Manuscript in preparation</em>.</li>
@@ -135,7 +120,7 @@
 
     <!-- Footer -->
     <footer>
-        <p class="mb-0">&copy; 2025 Sima Abbasi Habashi</p>
+        <p class="mb-0">&copy; 2025 Sima Abbasi</p>
     </footer>
 
     <!-- Bootstrap JS -->
