@@ -67,6 +67,17 @@
     .highlight {
       font-weight: bold;
     }
+    .sub-role {
+        color: #0d6efd; /* Bootstrap primary blue */
+        display: inline-block;
+        min-width: 160px;
+    }
+    .accordion-body h5 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
   </style>
 </head>
 <body>
@@ -143,10 +154,12 @@
             </h2>
             <div id="expCollapse" class="accordion-collapse collapse show" aria-labelledby="expHeading">
               <div class="accordion-body">
-                <h5><strong>Postdoctoral Fellow</strong> – University of Alberta (Mar 2025 – Present)</h5>
+                <!-- <h5><strong>Postdoctoral Fellow</strong> – University of Alberta (Mar 2025 – Present)</h5> -->
+                <h5><i class="fas fa-flask text-secondary me-2"></i><strong>Postdoctoral Fellow</strong> – University of Alberta ...</h5>
+
                 <ul>
-                  <li><span class="highlight">Clinical Research Lab</span>: Responsible for analyzing genetic profiles of stroke patients to explore immune-based diagnostic markers and correlations with MRI lesion metrics.</li>
-                  <li><span class="highlight">Computational Lab</span>: Responsible for building machine learning algorithms to identify genomic signatures associated with white matter damage and cognitive decline; integrated transcriptomic, MRI, and clinical datasets using Python and R.</li>
+                  <li><span class="sub-role">Clinical Research Lab</span>: Responsible for analyzing genetic profiles of stroke patients to explore immune-based diagnostic markers and correlations with MRI lesion metrics.</li>
+                  <li><span class="sub-role">Computational Lab</span>: Responsible for building machine learning algorithms to identify genomic signatures associated with white matter damage and cognitive decline; integrated transcriptomic, MRI, and clinical datasets using Python and R.</li>
                 </ul>
                 <h5><strong>PhD Research Scientist</strong> – University of Alberta (2019 – 2024)</h5>
                 <ul>
