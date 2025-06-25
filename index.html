@@ -1,161 +1,270 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Sima Abbasi Habashi – CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Sima Abbasi Habashi – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <style>
-        body{font-family:'Roboto',sans-serif;}
-        h1,h2{font-family:'Playfair Display',serif;}
-        .masthead{background:#f8f9fa;padding:2rem 0;text-align:center;}
-        .masthead img{height:60px;margin:0 10px;}
-        .sidebar img{width:100%;max-width:160px;border-radius:10px;}
-        .sidebar .list-unstyled li{margin:0.3rem 0;}
-        footer{background:#f8f9fa;text-align:center;padding:1rem;margin-top:3rem;}
-        .section-title{border-bottom:2px solid #dee2e6;padding-bottom:.3rem;margin-top:2.5rem;margin-bottom:1rem;}
-        ul.sub-bullet{list-style-type:circle;margin-left:1rem;}
-    </style>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    .masthead {
+      background: linear-gradient(90deg, #e8f0fe 0%, #ffffff 100%);
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .masthead img {
+      height: 60px;
+      margin: 0 10px;
+    }
+    .sidebar img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    }
+    .sidebar .list-unstyled li {
+      margin: 0.4rem 0;
+    }
+    footer {
+      background: #f1f3f5;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .accordion-button {
+      font-weight: bold;
+      font-size: 1.1rem;
+      background: #f0f4ff;
+    }
+    .accordion-button:not(.collapsed) {
+      color: #0d6efd;
+      background: #e0eaff;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="masthead">
-        <div class="container d-flex justify-content-center align-items-center flex-wrap">
-            <a href="https://www.ualberta.ca"><img src="images/UofA.png" alt="University of Alberta"></a>
-            <h1 class="mx-3 my-2">Sima Abbasi Habashi</h1>
-            <a href="https://www.ualberta.ca/neuroscience-and-mental-health-institute"><img src="images/cropped_image_transparent_background.png" alt="NMHI"></a>
-        </div>
-        <p class="text-muted mb-0">Ph.D. in Neuroscience | Computational Biology</p>
-    </header>
-
-    <div class="container my-5">
-        <div class="row g-4">
-            <!-- Sidebar -->
-            <aside class="col-md-3 text-center sidebar">
-                <img src="images/Photo.jpeg" alt="Sima Abbasi" class="mb-3">
-                <ul class="list-unstyled">
-                    <li><i class="fab fa-github me-1"></i><a href="https://github.com/sabbasii" target="_blank">GitHub</a></li>
-                    <li><i class="fab fa-linkedin me-1"></i><a href="https://linkedin.com/in/simaabbasi" target="_blank">LinkedIn</a></li>
-                    <li><i class="fas fa-envelope me-1"></i><a href="mailto:siimaabbasii@gmail.com" target="_blank">Email</a></li>
-                </ul>
-            </aside>
-
-            <!-- Main Content -->
-            <main class="col-md-9">
-                <!-- Professional Summary -->
-                <h2 class="section-title">Professional Summary</h2>
-                <p>Computational biologist and neuroscientist with expertise in analyzing high-dimensional biological data using Python, R, and machine learning. Applied machine learning algorithms to genomic, transcriptomic, and imaging datasets to extract biological insights. Skilled in building reproducible pipelines, integrating multi-omics data, and translating findings for interdisciplinary teams.</p>
-
-                <!-- Experience -->
-                <h2 class="section-title">Experience</h2>
-                <p><strong class="text-success">Postdoctoral Fellow – University of Alberta</strong> <span class="text-muted float-end">Mar 2025 – Present</span><br><em>Edmonton, AB</em></p>
-<ul>
-    <li><strong>Clinical Research Lab:</strong> Responsible for Analyzing genetic profiles of stroke patients to identify immune-based diagnostic biomarkers and correlate them with MRI-derived lesion metrics and clinical outcomes.</li>
-    <li><strong>Computational Lab (Dr. Cloud Cao):</strong> Responsible for building Machine learning and graph-based models to identify genomic signatures linked to white matter damage and cognitive decline using Python (scikit-learn, TensorFlow, Keras). Integrated multi-modal datasets with dimensionality reduction and multivariate modeling in R and Python.</li>
-</ul>
-                
-                <p><strong class="text-success">PhD Researcher – Neurovascular Injury & Inflammation</strong> <span class="text-muted float-end">Sep 2019 – Jan 2025</span><br><em>University of Alberta – Edmonton, AB</em></p>
-                <ul>
-                    <li>Optimized neutrophil depletion protocol that enhanced cerebral blood flow and established their role in vascular obstruction.</li>
-                    <li>Collaborated with NeuroTrauma Sciences, LLC to evaluate NTS-104; led analysis confirming infarct reduction and vascular rescue.</li>
-                    <li>Performed RNA-seq analysis and pathway enrichment using GO, KEGG, and STRING databases.</li>
-                    <li>Built automated analysis pipelines in Python and R; visualized multi-omics results using Seaborn, ggplot2, and Prism.</li>
-                </ul>
-                <p><strong class="text-success">Research Assistant – Nanostics Inc.</strong> <span class="text-muted float-end">Jan 2020 – Mar 2021</span><br><em>Edmonton, AB</em></p>
-                <ul>
-                    <li>Analyzed immune cell-derived extracellular vesicles in stroke patients and evaluated biomarker associations using Python-based statistical modeling.</li>
-                </ul>
-                <p><strong class="text-success">Research Assistant – University of Victoria</strong> <span class="text-muted float-end">Sep 2018 – Aug 2019</span><br><em>Victoria, BC</em></p>
-                <ul>
-                    <li>Developed real-time vascular imaging workflows and custom ImageJ macros to quantify vessel diameter and blood flow in rodent stroke models.</li>
-                </ul>
-
-                <!-- Skills -->
-                <h2 class="section-title">Skills</h2>
-                <ul>
-                    <li><strong>Machine Learning & Statistical Modeling:</strong>
-                        <ul class="sub-bullet">
-                            <li>Python (scikit-learn, TensorFlow, Keras), R (caret, Bioconductor)</li>
-                            <li>Regression, classification, regularization, feature selection</li>
-                        </ul>
-                    </li>
-                    <li><strong>Omics Data Analysis:</strong>
-                        <ul class="sub-bullet">
-                            <li>RNA-seq, SNPs, cytokine profiling, differential expression</li>
-                            <li>Pathway enrichment: KEGG, GO, STRING</li>
-                        </ul>
-                    </li>
-                    <li><strong>Data Integration & Visualization:</strong>
-                        <ul class="sub-bullet">
-                            <li>Multi-omics integration, correlation matrices, PCA, multivariate regression</li>
-                            <li>Visualization with Matplotlib, Seaborn, ggplot2, Prism</li>
-                        </ul>
-                    </li>
-                    <li><strong>Scientific Communication & Tools:</strong>
-                        <ul class="sub-bullet">
-                            <li>Cross-functional collaboration, scientific writing, grant preparation</li>
-                            <li>GitHub, Jupyter, RStudio, ImageJ</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- Certifications -->
-                <h2 class="section-title">Certifications</h2>
-                <ul>
-                    <li>Supervised Machine Learning: Regression and Classification – DeepLearning.ai (Stanford)</li>
-                    <li>Advanced Learning Algorithms and Neural Networks – DeepLearning.ai</li>
-                    <li>Data Science & Machine Learning Foundations – Omicslogic</li>
-                    <li>Computational Neuroscience (MATLAB) – Lethbridge University</li>
-                    <li>Advanced SQL for Data Science – DataCamp</li>
-                </ul>
-
-                <!-- Education -->
-                <h2 class="section-title">Education</h2>
-                <p><strong>Ph.D. in Neuroscience</strong> <span class="text-muted">– University of Alberta, 2025</span></p>
-                <ul>
-                    <li>Motyl Graduate Studentship (2021–2023)</li>
-                    <li>David Lawson Clinical Award (2021)</li>
-                    <li>Doctoral Recruitment Scholarship (2019)</li>
-                    <li>Izaak Walton Killam Nominee (2022)</li>
-                </ul>
-                <p><strong>M.Sc. in Neurophysiology</strong> <span class="text-muted">– University of Tehran, 2016</span></p>
-                <p><strong>B.Sc. in Biology</strong> <span class="text-muted">– University of Tehran, 2014</span></p>
-
-                <!-- Publications -->
-                <h2 class="section-title">Publications</h2>
-                <ul>
-                    <li>Abbasi S, Jickling G, Winship IR. Integrative multivariate analysis of imaging and transcriptomic data reveals mechanisms of vascular dysfunction after ischemic stroke. <em>Manuscript in preparation</em>.</li>
-                    <li>Abbasi S, Ma Y, Clarke M, Jickling G, Winship IR. Imaging cerebrovascular hemodynamics and transcriptomics in mouse models of ischemic stroke: Illuminating the role of neutrophils in futile recanalization. <em>Under review</em>.</li>
-                    <li>Abbasi S, Ma Y, Clarke M, Jickling G, Winship IR. Modulatory effects of Ibudilast on neutrophil activation and futile recanalization in a mouse model of ischemic stroke. <em>Under review</em>.</li>
-                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8695500/" target="_blank">Abbasi S et al. Immune modulation as a key mechanism for remote ischemic conditioning after stroke. <em>Frontiers in Neurology</em>, 2021.</a></li>
-                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/32937186/" target="_blank">Abbasi S et al. Morphine improved stress-induced amnesia through the endocannabinoid system. <em>Brain Research Bulletin</em>, 2020.</a></li>
-                </ul>
-
-                <!-- GitHub Projects -->
-                <h2 class="section-title">Online Projects</h2>
-                <ul>
-                    <li><a href="https://github.com/sabbasii/stroke-imaging-pipeline" target="_blank">Stroke Imaging Analysis Pipeline</a></li>
-                    <li><a href="https://github.com/sabbasii/RNASeq-NeuDep-MCAO" target="_blank">RNA-seq Differential Expression: Neutrophil Depletion vs. MCAO</a></li>
-                </ul>
-            </main>
-        </div>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex justify-content-center align-items-center flex-wrap">
+      <a href="https://www.ualberta.ca"><img src="images/UofA.png" alt="University of Alberta"></a>
+      <h1 class="mx-3 my-2">Sima Abbasi Habashi</h1>
+      <a href="https://www.ualberta.ca/neuroscience-and-mental-health-institute"><img src="images/cropped_image_transparent_background.png" alt="NMHI"></a>
     </div>
+    <p class="text-muted mb-0">Ph.D. in Neuroscience | Computational Biology</p>
+  </header>
 
-    <!-- Footer -->
-    <footer>
-        <p class="mb-0">&copy; 2024 Sima Abbasi</p>
-    </footer>
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Sidebar -->
+      <aside class="col-md-3 text-center sidebar">
+        <img src="images/Photo.jpeg" alt="Sima Abbasi" class="mb-3">
+        <ul class="list-unstyled">
+          <li><i class="fab fa-github me-1"></i><a href="https://github.com/sabbasii" target="_blank">GitHub</a></li>
+          <li><i class="fab fa-linkedin me-1"></i><a href="https://linkedin.com/in/simaabbasi" target="_blank">LinkedIn</a></li>
+          <li><i class="fas fa-envelope me-1"></i><a href="mailto:siimaabbasii@gmail.com" target="_blank">Email</a></li>
+        </ul>
+      </aside>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Main Content -->
+      <main class="col-md-9">
+        <!-- Professional Summary -->
+        <div class="mb-4">
+          <h2 class="mb-3">Professional Summary</h2>
+          <p>
+            Computational biologist and neuroscientist with extensive experience in analyzing high-dimensional biological datasets using Python and R. Applied machine learning algorithms to genomic, transcriptomic, and imaging data to uncover disease mechanisms and therapeutic targets in stroke models. Skilled in building reproducible data pipelines, integrating multi-omics with imaging metrics, and communicating results to cross-disciplinary teams in academic and biotech settings.
+          </p>
+        </div>
+
+        <div class="accordion" id="cvAccordion">
+
+
+          <!-- Work Experience -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="expHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#expCollapse" aria-expanded="true" aria-controls="expCollapse">
+                Experience
+              </button>
+            </h2>
+            <div id="expCollapse" class="accordion-collapse collapse show" aria-labelledby="expHeading">
+              <div class="accordion-body">
+                <h5><strong>Postdoctoral Fellow</strong> – University of Alberta, Edmonton, AB (Mar 2025 – Present)</h5>
+                <ul>
+                  <li><span class="highlight">Clinical Research Lab</span>: Responsible for analyzing genetic profiles of stroke patients to explore immune-based diagnostic markers and correlations with MRI lesion metrics.</li>
+                  <li><span class="highlight">Computational Lab</span>: Responsible for building machine learning algorithms to identify genomic signatures associated with white matter damage and cognitive decline; integrated transcriptomic, MRI, and clinical datasets using Python and R.</li>
+                </ul>
+                <h5><strong>PhD Researcher</strong> – University of Alberta (2019 – 2024)</h5>
+                <ul>
+                  <li>Optimized neutrophil depletion protocol that enhanced cerebral blood flow and established their role in vascular obstruction.</li>
+                  <li>Collaborated with NeuroTrauma Sciences, LLC to evaluate NTS-104; led data integration and analysis workflows confirming infarct reduction and vascular rescue.</li>
+                  <li>Performed RNA sequencing and bioinformatic analysis using gene and protein databases (UniProt, GO, KEGG, PPI networks) and characterized treatment-modulated pathways that identified distinct therapeutic response signatures.</li>
+                  <li>Built automated data analysis pipelines in Python and R (SciPy, statsmodels, Pandas, NumPy), visualized multi-omic results with Matplotlib, Seaborn, and GraphPad Prism, and integrated transcriptomic, cytokine, and imaging datasets through correlation and multivariate analysis.</li>
+                </ul>
+                <h5><strong>Research Assistant</strong> – Industry Collaboration, Nanostics Inc. (with University of Alberta), Edmonton, AB (Jan 2020 – Mar 2021)</h5>
+                <ul>
+                  <li>Analyzed immune cell–derived nanoparticles in stroke patients; evaluated EV biomarkers linked to stroke severity and recovery using Python-based statistical modeling.</li>
+                </ul>
+                <h5><strong>Research Assistant</strong> – Preclinical Stroke Research, University of Victoria, BC (Sep 2018 – Aug 2019)</h5>
+                <ul>
+                  <li>Responsible for vascular imaging and functional characterization of microvascular deficits in a rodent stroke model.</li>
+                  <li>Designed and implemented real-time imaging workflows and custom ImageJ macros that automated quantification of vessel diameter, perfusion, and blood flow after stroke and revealed vascular flow reductions following ischemic stroke.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="projHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projCollapse" aria-expanded="false" aria-controls="projCollapse">
+                Selected Projects
+              </button>
+            </h2>
+            <div id="projCollapse" class="accordion-collapse collapse" aria-labelledby="projHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li><strong>Immune-EV Biomarkers in Stroke:</strong> Analyzed immune cell–derived extracellular vesicles in stroke patients to evaluate biomarker–outcome associations using Python-based statistical analysis.</li>
+                  <li><strong>Multimodal Vascular Profiling:</strong> Designed data pipelines to merge in-vivo imaging with post-mortem tissue features to understand microvascular failure and treatment effects.</li>
+                  <li><strong>Transcriptomics Pipeline:</strong> Built reproducible RNASeq workflows for DEG, enrichment (GO/KEGG), and gene set clustering using edgeR, clusterProfiler, and STRING/Cytoscape.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Education -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="eduHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eduCollapse" aria-expanded="true" aria-controls="eduCollapse">
+                Education
+              </button>
+            </h2>
+            <div id="eduCollapse" class="accordion-collapse collapse show" aria-labelledby="eduHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li><strong>Ph.D. in Neuroscience</strong> – University of Alberta, Canada (2019–2024)</li>
+                  <li><strong>M.Sc. in Neurophysiology</strong> – University of Tehran, Iran (2014–2016)</li>
+                  <li><strong>B.Sc. in Animal Biology</strong> – University of Tehran, Iran (2010–2014)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Skills -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skillsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillsCollapse" aria-expanded="false" aria-controls="skillsCollapse">
+                Technical Skills
+              </button>
+            </h2>
+            <div id="skillsCollapse" class="accordion-collapse collapse" aria-labelledby="skillsHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li><strong>Programming:</strong> Python, R, Shell, SQL</li>
+                  <li><strong>Data Analysis:</strong> Machine learning (classification, regression, clustering), multivariate modeling, image processing, high-dimensional visualization</li>
+                  <li><strong>Tools:</strong> Pandas, NumPy, Matplotlib, Scikit-learn, Seaborn, TensorFlow, Keras, edgeR, clusterProfiler, Cytoscape, SPSS, STATA</li>
+                  <li><strong>Biological Analysis:</strong> Transcriptomics (RNASeq), Cytokine profiling (Luminex), Flow cytometry, High-res 2-photon imaging</li>
+                  <li><strong>Collaboration:</strong> Cross-functional teamwork with wet labs, statisticians, and biotech partners</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publications -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="pubsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pubsCollapse" aria-expanded="false" aria-controls="pubsCollapse">
+                Publications
+              </button>
+            </h2>
+            <div id="pubsCollapse" class="accordion-collapse collapse" aria-labelledby="pubsHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li>Abbasi S, Jickling G, Winship IR. Integrative multivariate analysis of imaging and transcriptomic data reveals mechanisms of vascular dysfunction after ischemic stroke. <em>Manuscript in preparation</em>.</li>
+                  <li>Abbasi S, Ma Y, Clarke M, Jickling G, Winship IR. Imaging cerebrovascular hemodynamics and transcriptomics in mouse models of ischemic stroke: Illuminating the role of neutrophils in futile recanalization. <em>Under review</em>.</li>
+                  <li>Abbasi S, Ma Y, Clarke M, Jickling G, Winship IR. Modulatory effects of Ibudilast on neutrophil activation and futile recanalization in a mouse model of ischemic stroke. <em>Under review</em>.</li>
+                  <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8695500/" target="_blank">Abbasi S et al. Immune modulation as a key mechanism for remote ischemic conditioning after stroke. <em>Frontiers in Neurology</em>, 2021.</a></li>
+                  <li><a href="https://pubmed.ncbi.nlm.nih.gov/32937186/" target="_blank">Abbasi S et al. Morphine improved stress-induced amnesia through the endocannabinoid system. <em>Brain Research Bulletin</em>, 2020.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Certifications -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="certsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certsCollapse" aria-expanded="false" aria-controls="certsCollapse">
+                Certifications
+              </button>
+            </h2>
+            <div id="certsCollapse" class="accordion-collapse collapse" aria-labelledby="certsHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li>Supervised Machine Learning – DeepLearning.AI (Coursera)</li>
+                  <li>Neural Networks and Deep Learning – DeepLearning.AI (Coursera)</li>
+                  <li>Data Science and Machine Learning – OmicsLogic, Pine Biotech</li>
+                  <li>Computational Neuroscience – University of Lethbridge</li>
+                  <li>Advanced SQL – DataCamp</li>
+                  <li>Grant Writing for Health Sciences – University of Alberta</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub Projects -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="projectsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectsCollapse" aria-expanded="false" aria-controls="projectsCollapse">
+                GitHub Projects
+              </button>
+            </h2>
+            <div id="projectsCollapse" class="accordion-collapse collapse" aria-labelledby="projectsHeading">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="https://github.com/sabbasii/stroke-neutrophil-analysis">Stroke-Neutrophil Transcriptomics Pipeline</a>: Differential gene expression and pathway analysis in neutrophil-depleted stroke models</li>
+                  <li><a href="https://github.com/sabbasii/vascular-2P-analysis">Vascular 2P Analysis</a>: Python tools for quantifying vascular diameter and flow from 2-photon imaging</li>
+                  <li><a href="https://github.com/sabbasii/luminex-blood-factors">Cytokine & Blood Factor Analysis</a>: Automated pipelines for analyzing Luminex data in stroke studies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Sima Abbasi Habashi</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
