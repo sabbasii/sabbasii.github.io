@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Sima Abbasi</title>
+  <meta name="description" content="Current research by Sima Abbasi in multimodal precision neuroscience, stroke multi-omics, biomedical knowledge graphs, and neurovascular biology.">
+  <meta name="author" content="Sima Abbasi">
+  <meta name="theme-color" content="#0b4f6c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Sima Abbasi">
+  <meta property="og:description" content="Multimodal biomedical research across human cohorts, molecular systems, and experimental models.">
+  <meta property="og:url" content="https://sabbasii.github.io/research.html">
+  <meta property="og:image" content="https://sabbasii.github.io/images/sima-abbasi-habashi.jpg">
+  <link rel="canonical" href="https://sabbasii.github.io/research.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20260731-9">
+</head>
+<body class="inner-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="wordmark" href="index.html" aria-label="Sima Abbasi, home">
+        <span class="wordmark-mark" aria-hidden="true">SA</span>
+        <span>Sima Abbasi</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Code &amp; Workflows</a>
+        <a href="experience.html">Experience</a>
+        <a href="recognition.html">Recognition</a>
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="research-intro">
+      <div class="section-shell">
+        <p class="eyebrow">Research</p>
+        <h1>Research programs</h1>
+        <p>
+          My work combines two current postdoctoral programs with an open multi-omics workflow
+          derived from experimental stroke research.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-tint page-content research-page" aria-labelledby="programs-title">
+      <div class="section-shell">
+        <h2 class="visually-hidden" id="programs-title">Research projects</h2>
+
+        <div class="research-workflows">
+          <article class="workflow-card workflow-card-ondri">
+            <header class="workflow-bar">
+              <p class="workflow-status"><span aria-hidden="true"></span>Active research</p>
+              <p>Human cohorts · Neuroimaging · Genomics</p>
+            </header>
+            <div class="workflow-main">
+              <div class="workflow-intro">
+                <p class="workflow-number">Project 01</p>
+                <h2>Multimodal analysis of white matter disease and cognitive decline</h2>
+                <p>
+                  An ONDRI-based study connecting genomic variation, quantitative MRI,
+                  longitudinal cognition, and vascular risk to investigate immune–vascular
+                  mechanisms of white matter disease.
+                </p>
+              </div>
+              <ul class="workflow-points">
+                <li>Integrates harmonized 3T MRI, genotyping, cognitive, demographic, clinical, and vascular-risk data from approximately 520 participants.</li>
+                <li>Combines variant-dosage and gene-burden features with pathway analysis, regularized modeling, and interpretable multimodal integration.</li>
+                <li>Includes a baseline proof-of-concept model for 129 participants with a mean five-fold cross-validated ROC-AUC of approximately 0.72; this is not a validated clinical model.</li>
+              </ul>
+            </div>
+            <footer class="workflow-footer">
+              <span>Multi-Modal Machine Learning to Uncover Genetic and Immune Pathways Driving WMH and Cognitive Decline</span>
+            </footer>
+          </article>
+
+          <article class="workflow-card workflow-card-cphi">
+            <header class="workflow-bar">
+              <p class="workflow-status"><span aria-hidden="true"></span>In development</p>
+              <p>Stroke · Multi-omics · Knowledge systems</p>
+            </header>
+            <div class="workflow-main">
+              <div class="workflow-intro">
+                <p class="workflow-number">Project 02</p>
+                <h2>Evidence-grounded knowledge graph for stroke multi-omics</h2>
+                <p>
+                  A literature-derived knowledge graph and retrieval-augmented generation
+                  framework for contextualizing molecular findings and supporting traceable
+                  hypothesis generation within the Canadian Precision Health Initiative.
+                </p>
+              </div>
+              <ul class="workflow-points">
+                <li>Defines a stroke-focused vocabulary and evidence model spanning genomics, transcriptomics, proteomics, metabolomics, lipidomics, pathways, treatments, and outcomes.</li>
+                <li>Adapts the RADOR architecture for document ingestion, biomedical entity and relation extraction, normalization, graph construction, and knowledge-graph–augmented retrieval.</li>
+                <li>Retains provenance, directionality, assertion status, biological context, assay information, and reported quantitative evidence for systematic source-level evaluation.</li>
+              </ul>
+            </div>
+            <footer class="workflow-footer">
+              <span>Genome Canada / Canadian Precision Health Initiative · approximately 3,200 patients with stroke</span>
+            </footer>
+          </article>
+
+          <article class="workflow-card workflow-card-mcao">
+            <header class="workflow-bar">
+              <p class="workflow-status"><span aria-hidden="true"></span>Open workflow</p>
+              <p>Experimental stroke · Multi-omics</p>
+            </header>
+            <div class="workflow-main">
+              <div class="workflow-intro">
+                <p class="workflow-number">Project 03</p>
+                <h2>Reproducible miRNA–mRNA analysis in a transient mouse MCAO model</h2>
+                <p>
+                  A public, version-controlled workflow for connecting paired miRNA and mRNA
+                  microarray measurements to treatment-associated molecular responses after stroke.
+                </p>
+              </div>
+              <ul class="workflow-points">
+                <li>Documents sample matching, quality control, normalization, annotation, and differential-expression analysis for paired molecular layers.</li>
+                <li>Uses late multi-omics integration to connect treatment-associated miRNAs and genes through documented or predicted target relationships.</li>
+                <li>Provides transparent paired-association and pathway-analysis steps through a reproducible R/Bioconductor workflow.</li>
+              </ul>
+            </div>
+            <footer class="workflow-footer workflow-links">
+              <a href="https://github.com/sabbasii/mouse-mcao-multiomics-pipeline" target="_blank" rel="noopener noreferrer">View the GitHub repository ↗</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://sabbasii.github.io/mouse-mcao-multiomics-pipeline/microarray_analysis_pipeline.html" target="_blank" rel="noopener noreferrer">Read the HTML workflow ↗</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p><strong>Sima Abbasi</strong></p>
+      <p>Computational &amp; Translational Neuroscientist</p>
+    </div>
+    <p>© 2026 · <a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>

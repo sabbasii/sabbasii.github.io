@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SA">
+  <rect width="64" height="64" rx="12" fill="#0b4f6c"/>
+  <path d="M14 17h36M14 32h36M14 47h36M20 11v42M32 11v42M44 11v42" stroke="#dff3f4" stroke-width="1" opacity=".28"/>
+  <text x="32" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">SA</text>
+</svg>
