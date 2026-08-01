@@ -13,7 +13,8 @@
   --line-dark: rgba(255, 255, 255, 0.18);
   --white: #ffffff;
   --shadow: 0 22px 60px rgba(8, 47, 67, 0.12);
-  --shell: min(1160px, calc(100% - 48px));
+  --shell: min(1320px, calc(100% - 48px));
+  --nav-font-size: 1.08rem;
   --radius: 3px;
   --font: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --text-xs: 0.75rem;
@@ -21,7 +22,7 @@
   --text-base: 1rem;
   --text-lg: 1.08rem;
   --title-sm: 1.22rem;
-  --title-md: clamp(1.65rem, 2.5vw, 2.1rem);
+  --title-md: clamp(1.55rem, 2.5vw, 2.1rem);
   --title-lg: clamp(2.1rem, 4.5vw, 2.85rem);
   --title-display: clamp(2.35rem, 5vw, 3.15rem);
 }
@@ -144,7 +145,7 @@ h3 {
   align-items: center;
   gap: 12px;
   color: var(--navy-deep);
-  font-size: 1rem;
+  font-size: var(--nav-font-size);
   font-weight: 750;
   letter-spacing: -0.015em;
   text-decoration: none;
@@ -158,7 +159,7 @@ h3 {
   border-radius: 50%;
   background: var(--navy);
   color: var(--white);
-  font-size: 0.74rem;
+  font-size: var(--nav-font-size);
   letter-spacing: 0.08em;
 }
 
@@ -166,13 +167,14 @@ h3 {
   display: flex;
   align-items: center;
   gap: clamp(18px, 2.3vw, 32px);
-  font-size: 0.89rem;
+  font-size: var(--nav-font-size);
   font-weight: 650;
   white-space: nowrap;
 }
 
-.site-nav > a:not(.nav-contact) {
-  font-size: 0.98rem;
+.site-nav > a {
+  font-size: inherit;
+  line-height: 1.2;
 }
 
 .site-nav a {
@@ -554,7 +556,7 @@ h3 {
 }
 
 .page-hero .section-shell {
-  max-width: 1160px;
+  max-width: 1320px;
 }
 
 .page-hero h1 {
@@ -621,7 +623,7 @@ h3 {
 }
 
 .publications-page .section-shell {
-  width: min(1160px, calc(100vw - 48px));
+  width: var(--shell);
 }
 
 .output-hero {
@@ -906,7 +908,7 @@ h3 {
 .manuscript-heading h2 {
   margin-bottom: 14px;
   color: var(--white);
-  font-size: 1.65rem;
+  font-size: 1.55rem;
 }
 
 .manuscript-heading .eyebrow {
@@ -1161,7 +1163,7 @@ h3 {
 }
 
 .contact-page-shell {
-  width: min(1000px, calc(100% - 48px));
+  width: var(--shell);
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 260px;
@@ -1239,27 +1241,8 @@ h3 {
 }
 
 /* Research page */
-.research-intro {
-  padding: 46px 0 35px;
-  border-bottom: 1px solid #d0e0e7;
-  background: #f3fafc;
-}
-
-.research-intro .section-shell,
 .research-page .section-shell {
-  width: min(1880px, calc(100% - 80px));
-}
-
-.research-intro h1 {
-  margin-bottom: 12px;
-  font-size: clamp(1.95rem, 3.5vw, 2.45rem);
-}
-
-.research-intro p:last-child {
-  max-width: 840px;
-  margin-bottom: 0;
-  color: #49657d;
-  font-size: 1rem;
+  width: var(--shell);
 }
 
 .research-page {
@@ -1323,8 +1306,8 @@ h3 {
 }
 
 .workflow-main {
-  min-height: 620px;
-  padding: clamp(70px, 5.4vw, 104px) clamp(62px, 5vw, 92px);
+  min-height: 440px;
+  padding: clamp(40px, 3.5vw, 60px) clamp(62px, 5vw, 92px);
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
@@ -1333,7 +1316,7 @@ h3 {
 }
 
 .workflow-number {
-  margin-bottom: 43px;
+  margin-bottom: 28px;
   color: #087e8b;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.78rem;
@@ -1344,8 +1327,8 @@ h3 {
 
 .workflow-intro h2 {
   max-width: 760px;
-  margin-bottom: 27px;
-  font-size: clamp(1.8rem, 2.6vw, 2.35rem);
+  margin-bottom: 22px;
+  font-size: 1.6rem;
   line-height: 1.18;
 }
 
@@ -1353,7 +1336,7 @@ h3 {
   max-width: 720px;
   margin-bottom: 0;
   color: #466482;
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.12rem, 1.35vw, 1.22rem);
   line-height: 1.68;
 }
 
@@ -1365,14 +1348,14 @@ h3 {
 
 .workflow-points li {
   position: relative;
-  padding: 0 0 40px 39px;
+  padding: 0 0 10px 39px;
   color: #46617f;
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.12rem, 1.35vw, 1.22rem);
   line-height: 1.68;
 }
 
 .workflow-points li + li {
-  padding-top: 40px;
+  padding-top: 10px;
   border-top: 1px solid #d5e1e6;
 }
 
@@ -1392,7 +1375,97 @@ h3 {
 }
 
 .workflow-points li + li::before {
-  top: calc(40px + 0.66em);
+  top: calc(10px + 0.66em);
+}
+
+.workflow-card-mcao .workflow-main-network {
+  min-height: 700px;
+  padding: 0;
+  grid-template-columns: minmax(380px, 0.48fr) minmax(0, 0.52fr);
+  align-items: stretch;
+  gap: 0;
+}
+
+.workflow-card-mcao .workflow-copy {
+  padding: clamp(40px, 3.5vw, 60px) clamp(42px, 4vw, 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workflow-card-mcao .workflow-copy .workflow-intro {
+  margin-bottom: 38px;
+}
+
+.workflow-card-mcao .workflow-intro h2 {
+  color: var(--navy);
+}
+
+.workflow-card-mcao .workflow-copy .workflow-number {
+  margin-bottom: 24px;
+}
+
+.workflow-card-mcao .workflow-copy .workflow-points li {
+  padding-bottom: 10px;
+}
+
+.workflow-card-mcao .workflow-copy .workflow-points li + li {
+  padding-top: 10px;
+}
+
+.workflow-card-mcao .workflow-copy .workflow-points li + li::before {
+  top: calc(10px + 0.66em);
+}
+
+.workflow-network {
+  --network-pad-top: 32px;
+  --network-pad-right: 64px;
+  --network-pad-bottom: 36px;
+  --network-pad-left: 22px;
+  position: relative;
+  min-width: 0;
+  min-height: 760px;
+  padding:
+    var(--network-pad-top)
+    var(--network-pad-right)
+    var(--network-pad-bottom)
+    var(--network-pad-left);
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+}
+
+.workflow-network-frame {
+  position: relative;
+  width: min(100%, 640px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 96px;
+  background: #082744;
+}
+
+.workflow-network-frame::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 96px;
+  content: "";
+  background:
+    linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.82) 1%, rgba(255, 255, 255, 0.28) 4%, transparent 9%),
+    linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0.82) 1%, rgba(255, 255, 255, 0.28) 4%, transparent 9%),
+    linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0.80) 1%, rgba(255, 255, 255, 0.25) 3.5%, transparent 8%),
+    linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0.80) 1%, rgba(255, 255, 255, 0.25) 3.5%, transparent 8%);
+}
+
+.workflow-network-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: block;
+  border: 0;
+  border-radius: 96px;
+  background: #082744;
 }
 
 .workflow-footer {
@@ -1449,11 +1522,6 @@ h3 {
 }
 
 @media (max-width: 1100px) {
-  .research-intro .section-shell,
-  .research-page .section-shell {
-    width: calc(100% - 36px);
-  }
-
   .workflow-main {
     min-height: 0;
     grid-template-columns: 1fr;
@@ -1464,14 +1532,31 @@ h3 {
   .workflow-intro > p:not(.workflow-number) {
     max-width: 760px;
   }
+
+  .workflow-card-mcao .workflow-main-network {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-network {
+    --network-pad-top: 18px;
+    --network-pad-right: 18px;
+    --network-pad-bottom: 18px;
+    --network-pad-left: 18px;
+    min-height: 680px;
+  }
+
+  .workflow-network-frame {
+    width: min(100%, 600px);
+  }
 }
 
 @media (max-width: 980px) {
   :root {
-    --shell: min(100% - 36px, 1160px);
+    --shell: min(100% - 36px, 1320px);
   }
 
   .nav-shell {
+    width: var(--shell);
     min-height: auto;
     padding: 18px 0 0;
     display: block;
@@ -1651,6 +1736,7 @@ h3 {
 @media (max-width: 500px) {
   :root {
     --shell: calc(100% - 28px);
+    --nav-font-size: 0.98rem;
   }
 
   .wordmark-mark {
@@ -1660,11 +1746,6 @@ h3 {
 
   .site-nav {
     gap: 20px;
-    font-size: 0.86rem;
-  }
-
-  .site-nav > a:not(.nav-contact) {
-    font-size: 0.92rem;
   }
 
   .hero-copy h1 {
@@ -1758,11 +1839,6 @@ h3 {
     border-radius: 11px;
   }
 
-  .research-intro .section-shell,
-  .research-page .section-shell {
-    width: calc(100% - 28px);
-  }
-
   .workflow-bar {
     padding: 15px 18px;
     flex-direction: column;
@@ -1772,6 +1848,27 @@ h3 {
   .workflow-main {
     padding: 32px 20px 36px;
     gap: 34px;
+  }
+
+  .workflow-card-mcao .workflow-main-network {
+    padding: 0;
+    gap: 0;
+  }
+
+  .workflow-card-mcao .workflow-copy {
+    padding: 42px 22px 46px;
+  }
+
+  .workflow-network {
+    --network-pad-top: 12px;
+    --network-pad-right: 12px;
+    --network-pad-bottom: 12px;
+    --network-pad-left: 12px;
+    min-height: 540px;
+  }
+
+  .workflow-network-frame {
+    width: min(100%, 480px);
   }
 
   .workflow-number {

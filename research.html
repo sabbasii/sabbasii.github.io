@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://sabbasii.github.io/images/sima-abbasi-habashi.jpg">
   <link rel="canonical" href="https://sabbasii.github.io/research.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20260731-9">
+  <link rel="stylesheet" href="style.css?v=20260801-12">
 </head>
 <body class="inner-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -37,7 +37,7 @@
   </header>
 
   <main id="main-content">
-    <section class="research-intro">
+    <section class="page-hero">
       <div class="section-shell">
         <p class="eyebrow">Research</p>
         <h1>Research programs</h1>
@@ -53,6 +53,45 @@
         <h2 class="visually-hidden" id="programs-title">Research projects</h2>
 
         <div class="research-workflows">
+          <article class="workflow-card workflow-card-mcao">
+            <header class="workflow-bar">
+              <p class="workflow-status"><span aria-hidden="true"></span>Open workflow</p>
+              <p>Experimental stroke · Multi-omics</p>
+            </header>
+            <div class="workflow-main workflow-main-network">
+              <div class="workflow-copy">
+                <div class="workflow-intro">
+                  <p class="workflow-number">Project 01</p>
+                  <h2>Reproducible miRNA–mRNA analysis in a transient mouse MCAO model</h2>
+                  <p>
+                    A public, version-controlled workflow for connecting paired miRNA and mRNA
+                    microarray measurements to treatment-associated molecular responses after stroke.
+                  </p>
+                </div>
+                <ul class="workflow-points">
+                  <li>Documents sample matching, quality control, normalization, annotation, and differential-expression analysis for paired molecular layers.</li>
+                  <li>Uses late multi-omics integration to connect treatment-associated miRNAs and genes through documented or predicted target relationships.</li>
+                  <li>Provides transparent paired-association and pathway-analysis steps through a reproducible R/Bioconductor workflow.</li>
+                </ul>
+              </div>
+              <div class="workflow-network">
+                <div class="workflow-network-frame">
+                  <iframe
+                    src="interactive/mcao-mirna-mrna-network.html"
+                    title="Interactive target-supported miRNA–mRNA evidence network"
+                    loading="lazy"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+            <footer class="workflow-footer workflow-links">
+              <a href="https://github.com/sabbasii/mouse-mcao-multiomics-pipeline" target="_blank" rel="noopener noreferrer">View the GitHub repository ↗</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://sabbasii.github.io/mouse-mcao-multiomics-pipeline/microarray_analysis_pipeline.html" target="_blank" rel="noopener noreferrer">Read the HTML workflow ↗</a>
+            </footer>
+          </article>
+
           <article class="workflow-card workflow-card-ondri">
             <header class="workflow-bar">
               <p class="workflow-status"><span aria-hidden="true"></span>Active research</p>
@@ -60,7 +99,7 @@
             </header>
             <div class="workflow-main">
               <div class="workflow-intro">
-                <p class="workflow-number">Project 01</p>
+                <p class="workflow-number">Project 02</p>
                 <h2>Multimodal analysis of white matter disease and cognitive decline</h2>
                 <p>
                   An ONDRI-based study connecting genomic variation, quantitative MRI,
@@ -86,7 +125,7 @@
             </header>
             <div class="workflow-main">
               <div class="workflow-intro">
-                <p class="workflow-number">Project 02</p>
+                <p class="workflow-number">Project 03</p>
                 <h2>Evidence-grounded knowledge graph for stroke multi-omics</h2>
                 <p>
                   A literature-derived knowledge graph and retrieval-augmented generation
@@ -102,33 +141,6 @@
             </div>
             <footer class="workflow-footer">
               <span>Genome Canada / Canadian Precision Health Initiative · approximately 3,200 patients with stroke</span>
-            </footer>
-          </article>
-
-          <article class="workflow-card workflow-card-mcao">
-            <header class="workflow-bar">
-              <p class="workflow-status"><span aria-hidden="true"></span>Open workflow</p>
-              <p>Experimental stroke · Multi-omics</p>
-            </header>
-            <div class="workflow-main">
-              <div class="workflow-intro">
-                <p class="workflow-number">Project 03</p>
-                <h2>Reproducible miRNA–mRNA analysis in a transient mouse MCAO model</h2>
-                <p>
-                  A public, version-controlled workflow for connecting paired miRNA and mRNA
-                  microarray measurements to treatment-associated molecular responses after stroke.
-                </p>
-              </div>
-              <ul class="workflow-points">
-                <li>Documents sample matching, quality control, normalization, annotation, and differential-expression analysis for paired molecular layers.</li>
-                <li>Uses late multi-omics integration to connect treatment-associated miRNAs and genes through documented or predicted target relationships.</li>
-                <li>Provides transparent paired-association and pathway-analysis steps through a reproducible R/Bioconductor workflow.</li>
-              </ul>
-            </div>
-            <footer class="workflow-footer workflow-links">
-              <a href="https://github.com/sabbasii/mouse-mcao-multiomics-pipeline" target="_blank" rel="noopener noreferrer">View the GitHub repository ↗</a>
-              <span aria-hidden="true">·</span>
-              <a href="https://sabbasii.github.io/mouse-mcao-multiomics-pipeline/microarray_analysis_pipeline.html" target="_blank" rel="noopener noreferrer">Read the HTML workflow ↗</a>
             </footer>
           </article>
         </div>
