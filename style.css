@@ -1252,11 +1252,14 @@ h3 {
 .training-card-copy > p:not(.training-year) {
   margin-bottom: 8px;
   color: var(--ink-soft);
+  font-size: 1.08rem;
+  font-weight: 700;
 }
 
 .training-card-copy .training-date {
   margin-bottom: 0;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
+  font-weight: 700;
 }
 
 .certificate-preview {
