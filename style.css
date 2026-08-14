@@ -1202,6 +1202,11 @@ h3 {
   color: var(--ink-soft);
 }
 
+.training-cards {
+  display: grid;
+  gap: 28px;
+}
+
 .training-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 440px);
@@ -1285,7 +1290,7 @@ h3 {
 
 .additional-training .clean-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   column-gap: clamp(32px, 6vw, 84px);
 }
 
